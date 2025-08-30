@@ -9,12 +9,10 @@ h1, h3, h4, p{ /*Texto e Paragrafo*/
 
 a{
     color: blue;
-    margin-left: 5px; 
-    margin-right: 5px;
     text-decoration: none; /*Tilha a linha de de link de baixo*/
 }
 
-.card{
+.lista{
     border-radius: 10px;
     margin-top: 1%;
     width: 25%;
@@ -23,30 +21,48 @@ a{
     
 }
 
-.card h4{
+.lista h4{
     margin-left: 5%;
     text-align: left;
     color:white;
 }
-
 
 ul, ol{ /*Lista*/
     color:white;
     text-align: left;
 }
 
-table, tr, th,td{ /*Tabela*/
-    border:2px solid black;
-    border-radius: 15px;
-    border-collapse: collapse;
-    background-color: rgba(231, 230, 230, 0.678) ;
-    text-align: center;
-    color: black;
-    margin-top: 10;
-   
+#div-container-table{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#image1 img{
+table{
+ box-shadow: 0px 1px 9px 5px rgb(255, 255, 255);
+}
+
+table, tr{
+    border-collapse: collapse;  /*Tabela*/
+    background-color: rgba(231, 230, 230, 0.678) ;
+    width: 70%;
+}
+
+td{
+    border:3px solid black;
+    text-align: center;
+    color: black;
+    border-collapse: collapse;
+}
+
+th{
+    border:3px solid black;
+    color: black;
+    font-size: 20px;
+    background-color: rgba(231, 230, 230, 0.678) ;  
+}
+
+#head-image img{
     max-width: 200px;
     width: 100%;
     height: 100%;
@@ -62,7 +78,7 @@ img{
 img:hover{ /*Animação para as imagens*/
     transform: translateY(-1%); /*Como a animação vai mover*/
     transition: 600ms; /*Tempo de animação*/
-    box-shadow: 0px 9px 20px 2px rgb(51, 16, 83); /*Aplicar a sombra na animação*/
+    box-shadow: 0px 9px 20px 2px rgb(125, 38, 206); /*Aplicar a sombra na animação*/
 }
 
 img:not(:hover){ /*Quando o mouse sair*/
