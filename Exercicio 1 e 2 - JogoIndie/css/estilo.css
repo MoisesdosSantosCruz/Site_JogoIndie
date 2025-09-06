@@ -45,6 +45,7 @@ ul, ol{ /*Lista*/
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
+    column-width: 100px;
 }
 
 table, tr{
@@ -52,7 +53,6 @@ table, tr{
     background-color: rgba(231, 230, 230, 0.678) ;
     width: 70%;
     overflow: hidden;
-
 }
 
 td{
@@ -61,7 +61,6 @@ td{
     color: black;
     border-collapse: collapse;
     overflow: hidden;
-
 }
 
 th{
@@ -70,7 +69,6 @@ th{
     font-size: 20px;
     background-color: rgba(231, 230, 230, 0.678) ;  
     overflow: hidden;
-
 }
 
 #head-image img{
@@ -96,6 +94,15 @@ img:not(:hover){ /*Quando o mouse sair*/
     transition: 600ms;
 }
 
+#div-container-center{
+  display: flex; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+  margin-bottom: 20px;
+  padding: 0% 20%;
+}
+
+/*Cartão*/
 .card{
   background-color: white; 
   width: 300px; 
@@ -103,6 +110,8 @@ img:not(:hover){ /*Quando o mouse sair*/
   border-radius: 10px; 
   margin: 50px auto;  
   overflow: hidden;
+  
+
 }
 
 .card-header{
@@ -114,10 +123,10 @@ img:not(:hover){ /*Quando o mouse sair*/
   
 }
 .profile-img{
-  width: 100px; 
-  height: 100px; 
+  width: 150px; 
+  height: 150px; 
   border-radius: 50%; 
-  object-fit: cover; 
+  object-fit: cover; /*Deixa a imagem alinhada certinha*/
 }
 
 .card-body{
@@ -131,7 +140,6 @@ img:not(:hover){ /*Quando o mouse sair*/
 }
 
 
-
-
 /*box-shadow adiciona sombra com animação na imagem ou na div. 0px - Sombra na forma horizontal, 9px - forma vertical, 20px - Quantidade da sombra/blur
-2px - Quanto a sombra vai se espalhar.
+2px - Quanto a sombra vai se espalhar. */
+
