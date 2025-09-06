@@ -12,38 +12,47 @@ a{
     text-decoration: none; /*Tilha a linha de de link de baixo*/
 }
 
+#div-container-lista{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .lista{
     border-radius: 10px;
     margin-top: 1%;
     width: 25%;
     height: 40%;
     border: 2px solid #fff;
-    
+    overflow: hidden;
+
 }
 
 .lista h4{
     margin-left: 5%;
     text-align: left;
     color:white;
+    overflow: hidden;
 }
 
 ul, ol{ /*Lista*/
     color:white;
     text-align: left;
+    flex-wrap: wrap;
 }
 
 #div-container-table{
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-     box-shadow: 0px 1px 9px 5px rgb(255, 255, 255);
 }
-
 
 table, tr{
     border-collapse: collapse;  /*Tabela*/
     background-color: rgba(231, 230, 230, 0.678) ;
     width: 70%;
+    overflow: hidden;
+
 }
 
 td{
@@ -51,6 +60,8 @@ td{
     text-align: center;
     color: black;
     border-collapse: collapse;
+    overflow: hidden;
+
 }
 
 th{
@@ -58,6 +69,8 @@ th{
     color: black;
     font-size: 20px;
     background-color: rgba(231, 230, 230, 0.678) ;  
+    overflow: hidden;
+
 }
 
 #head-image img{
@@ -82,5 +95,43 @@ img:hover{ /*Animação para as imagens*/
 img:not(:hover){ /*Quando o mouse sair*/
     transition: 600ms;
 }
+
+.card{
+  background-color: white; 
+  width: 300px; 
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  border-radius: 10px; 
+  margin: 50px auto;  
+  overflow: hidden;
+}
+
+.card-header{
+  border-radius: 10px 10px 0 0;
+  background-color: blueviolet; 
+  color: white; 
+  padding: 20px; 
+  text-align: center; 
+  
+}
+.profile-img{
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+}
+
+.card-body{
+  background-color: white;
+  padding: 20px; /* Espaçamento interno do corpo do cartão - https://www.w3schools.com/css/css_padding.asp */
+}
+
+.text-justify p{
+    color: black;
+    text-align: justify;
+}
+
+
+
+
 /*box-shadow adiciona sombra com animação na imagem ou na div. 0px - Sombra na forma horizontal, 9px - forma vertical, 20px - Quantidade da sombra/blur
 2px - Quanto a sombra vai se espalhar.
