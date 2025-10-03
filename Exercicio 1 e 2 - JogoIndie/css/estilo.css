@@ -45,14 +45,14 @@ ul, ol{ /*Lista*/
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    column-width: 100px;
+   
 }
+
 
 table, tr{
     border-collapse: collapse;  /*Tabela*/
     background-color: rgba(231, 230, 230, 0.678) ;
     width: 70%;
-    overflow: hidden;
 }
 
 td{
@@ -60,7 +60,6 @@ td{
     text-align: center;
     color: black;
     border-collapse: collapse;
-    overflow: hidden;
 }
 
 th{
