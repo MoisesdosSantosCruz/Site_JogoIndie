@@ -1,6 +1,7 @@
 html, body {
   height: 100%;
 	margin: 0;
+	background-color: rgb(51, 42, 42);
 }
 
 
@@ -17,7 +18,7 @@ main {
 
 
 .col{
-	
+	position: relative;
 	padding: 0% 20x;
 	height: 40px;
 	background-color: rgb(35, 47, 62);
@@ -28,27 +29,26 @@ main {
 }
 
 .carousel-inner img{
-	width: 100%;       /* largura total do slide */
+	width: 30%;       /* largura total do slide */
 	height: auto;      /* mantém proporção */
 	object-fit: cover; /* cobre todo o espaço sem deformar */
+	position: relative; 
 }
+
 .carousel-item {
-	min-height: 70vh;
-	flex:1;
+	min-height: 100vh;
 	height: auto;
-	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-#div-container-center{
 
+#div-container-center{
   display: flex; 
   justify-content: center; 
   flex-wrap: wrap; 
-	margin-top: 150px;
-  margin-bottom: 20px;
-  padding: 0% 10%;
+  margin-bottom: 30px;
+  padding: 0% 20%;
 }
 
 .card{
