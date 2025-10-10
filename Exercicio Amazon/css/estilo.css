@@ -2,9 +2,19 @@
 
 body {
 	background:linear-gradient(black,black,black,rgb(35, 47, 62));
-
 }
 
+.navbar > .container-fluid > .navbar-brand {
+  color: white;
+}
+
+.collapse > .navbar-nav > li:first-child > a {
+  color: white;
+}
+
+.navbar .navbar-nav > li > a {
+  color: white;
+}
 .col{
 	position: relative;
 	padding: 0% 20x;
@@ -17,8 +27,8 @@ body {
 }
 
 .carousel-inner img{
-	width: auto;       /* largura total do slide */
-	height: auto;      /* mantém proporção */
+	width: auto;       
+	height: auto;      
 	position: relative; 
 }
 
@@ -27,25 +37,30 @@ body {
 	justify-content: center;
 }
 
-
 #div-container-center{
   display: flex; 
   justify-content: center; 
   flex-wrap: wrap; 
   margin-bottom: 30px;
-  padding: 10% 10%;
+  gap:30px;
+  padding: 10% 0%;
 }
 
-.card {
-  display: flex;
-  gap: 10px; /* distância entre imagens */
+.card img{
+	padding: 5% 5%;
+	border-radius: 10%;
+	height: 150px;
+}
+.card-grid{
+ 	display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
 }
 
-.card img {
-  width: 50%; /* ajusta o tamanho das imagens para caber lado a lado */
-  border-radius: 5px;
-  padding: 10px;
+.card-itens{
+	text-align: center;
 }
+
 
 footer{
   background-color: rgb(35, 47, 62);
