@@ -1,6 +1,8 @@
 body{
     background-color: black;
+     margin: 0;
 }
+
 
 h1, h3, h4, p{ /*Texto e Paragrafo*/
     color:white;
@@ -11,6 +13,7 @@ a{
     color: blue;
     text-decoration: none; /*Tilha a linha de de link de baixo*/
 }
+
 
 #div-container-lista{
     justify-content: center;
@@ -27,6 +30,8 @@ a{
     overflow: hidden;
 
 }
+
+
 
 .lista h4{
     margin-left: 5%;
@@ -140,3 +145,16 @@ img:not(:hover){ /*Quando o mouse sair*/
 /*box-shadow adiciona sombra com animação na imagem ou na div. 0px - Sombra na forma horizontal, 9px - forma vertical, 20px - Quantidade da sombra/blur
 2px - Quanto a sombra vai se espalhar. */
 
+.navbar_lista{
+  position: fixed;     
+  top: 0;           
+  width: 100%;        
+  z-index: 1000;        
+  background:linear-gradient(rgb(0, 0, 0),black,black,rgb(64, 53, 216));
+}
+
+.title{
+    color: white;
+    text-align: center;
+
+}
