@@ -17,8 +17,8 @@ botao.addEventListener("click", function (){
     
     if(contador == 10){
 
-        alert('Você passou de 10 afarezes, VAI FAZER CLT, VAGABUNDO.')
-        location.reload();
+        alert('Você passou de 10 afarezes')
+ 
     }
 });
 
@@ -41,4 +41,5 @@ botaoPesquisar.addEventListener("click", function () {
             tarefa.style.display = 'none';
         }
     }
+
 });
