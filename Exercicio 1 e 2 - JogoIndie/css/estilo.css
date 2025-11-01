@@ -153,6 +153,20 @@ img:not(:hover){ /*Quando o mouse sair*/
   background:linear-gradient(rgb(0, 0, 0),black,black,rgb(64, 53, 216));
 }
 
+
+.lista-projetos {
+  margin-top: 100px; /* cria espaço abaixo da nav */  
+  justify-content: center; 
+  flex-wrap: wrap; 
+  
+  padding: 0% 20%;
+ 
+}
+
+.lista-projetos a{
+  color: white; /* cria espaço abaixo da nav */
+}
+
 .title{
     color: white;
     text-align: center;
